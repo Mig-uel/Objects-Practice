@@ -73,18 +73,22 @@ books.forEach(book => {
      releaseYear: 1994, 
      duration: 142
   } 
-  After you have crreated your movie object, print the title 
+  After you have created your movie object, print the title 
   of your movie using dot notation
   Print the director's name
   Print the release year
   Maybe your favorite came with an extended cut, including deleted scenes. 
   Write a statement that increases your movie object's duration by 30 minutes. 
 */
-
-
-
-
-
+const ironman = {
+  title: "Iron Man",
+  director: 'Jon Favreau',
+  actors: ['Robert Downey', 'Jon Favreau', 'Gwyneth Paltrow'],
+  releaseYear: 2008,
+  duration: 126
+}
+console.log(`Title: ${ironman.title} \nDirector: ${ironman.director} \nRelease Year: ${ironman.releaseYear} \nDuration: ${ironman.duration} minutes`);
+console.log(`Extended Scenes (+30 min): ${ironman.duration += 30} minutes`);
 
 //Exercise #4 
 //using the array provided below, 
