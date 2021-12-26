@@ -100,15 +100,28 @@ let arrayList = [1, 2, 3];
 console.log(Array.isArray(arrayList));
 console.log(arrayList instanceof Array);
 
-//Exercise #5
-// Write a function countCharacters that, when given a string as an argument,
-// returns an object containing counts of the ocurrences of each character in 
-// the string
-// function countCharacters(){
-// 
-//  }
-// countCharacters("hello"); => {"h": 1, "e": 1, "l": 2, "o": 1}
+/* Exercise #5
 
+   Write a function countCharacters that, when given a string as an argument,
+   returns an object containing counts of the ocurrences of each character in 
+   the string
+   function countCharacters(){
+  
+    }
+   countCharacters("hello"); => {"h": 1, "e": 1, "l": 2, "o": 1}
+*/
+const countCharacters = (str) => {
+  let obj = {};
+  for (let i = 0; i < str.length; i++) {
+    if (obj[str[i]]) {
+      obj[str[i]]++;
+    } else {
+      obj[str[i]] = 1;
+    }
+  }
+  return obj;
+};
+console.log(countCharacters("mississipi"));
 
 //Exercise #6
 // Write a function that accepts two objects
