@@ -21,33 +21,65 @@ let recipe = {
 };
 console.log(`${recipe.title} \nServes: ${recipe.servings} \nIngredients:\n${recipe.ingredients[0]}\n${recipe.ingredients[1]}\n${recipe.ingredients[2]}`);
 
-//Exercise #2
-// Create an array of objects, where each object describes
-// a book and has properties for the *title*(a string), *author*(a string)
-// and *alreadyRead* (a boolean indicating if you read it yet)
-// Iterate through the array of objects of books. For each book, log the book title and book
-// author like so: "1984 by George Orwell"
-// Now use an if/else statement to change the output depending on whether you read it
-// or not. If you read it, log a string like "You already read "1984" by George Orwell"
-// and vice versa
+/* Exercise #2 */
+/* 
+  Create an array of objects, where each object describes
+  a book and has properties for the *title*(a string), *author*(a string)
+  and *alreadyRead* (a boolean indicating if you read it yet)
+  Iterate through the array of objects of books. For each book, log the book title and book
+  author like so: "1984 by George Orwell"
+  Now use an if/else statement to change the output depending on whether you read it
+  or not. If you read it, log a string like "You already read "1984" by George Orwell"
+  and vice versa if you havent read it yet.
+*/
 
+let books = [
+  {
+    title: "1984",
+    author: "George Orwell",
+    alreadyRead: false
+  },
+  {
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    alreadyRead: true
+  },
+  {
+    title: "The Catcher in the Rye",
+    author: "J. D. Salinger",
+    alreadyRead: true
+  },
+  {
+    title: "The Grapes of Wrath",
+    author: "John Steinbeck",
+    alreadyRead: false
+  }
+];
 
+books.forEach(book => {
+  if (book.alreadyRead)
+    console.log(`You already read "${book.title}" by ${book.author}`);
+  else
+    console.log(`You still need to read "${book.title}" by ${book.author}`);
+});
 
-//Exercise #3
-//Create your object representing your favorite movie, like so
-// const shawshank = {
-//   title: 'Shawshank Redemption',
-//   director: 'Frank Darabont',
-//   actors: ['Tim Robbins', 'Morgan Freeman', 'Bob Gunton'],
-//   releaseYear: 1994, 
-//   duration: 142
-// }
-// After you have crreated your movie object, print the title 
-// of your movie using dot notation
-// Print the director's name
-// Print the release year
-// Maybe your favorite came with an extended cut, including deleted scenes. 
-// Write a statement that increases your movie object's duration by 30 minutes. 
+/* Exercise #3 */
+/*
+  Create your object representing your favorite movie, like so
+  const shawshank = {
+     title: 'Shawshank Redemption',
+     director: 'Frank Darabont',
+     actors: ['Tim Robbins', 'Morgan Freeman', 'Bob Gunton'],
+     releaseYear: 1994, 
+     duration: 142
+  } 
+  After you have crreated your movie object, print the title 
+  of your movie using dot notation
+  Print the director's name
+  Print the release year
+  Maybe your favorite came with an extended cut, including deleted scenes. 
+  Write a statement that increases your movie object's duration by 30 minutes. 
+*/
 
 
 
