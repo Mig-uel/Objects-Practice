@@ -1,6 +1,5 @@
-/* Exercise #1 */
+/* Exercise #1
 
-/* 
   Create an object to hold information on your favorite recipe.
   It should have properties for *title* (a string), *servings*(a number)
   and *ingredients*(an array of strings)
@@ -21,8 +20,8 @@ let recipe = {
 };
 console.log(`${recipe.title} \nServes: ${recipe.servings} \nIngredients:\n${recipe.ingredients[0]}\n${recipe.ingredients[1]}\n${recipe.ingredients[2]}`);
 
-/* Exercise #2 */
-/* 
+/* Exercise #2
+
   Create an array of objects, where each object describes
   a book and has properties for the *title*(a string), *author*(a string)
   and *alreadyRead* (a boolean indicating if you read it yet)
@@ -63,8 +62,8 @@ books.forEach(book => {
     console.log(`You still need to read "${book.title}" by ${book.author}`);
 });
 
-/* Exercise #3 */
-/*
+/* Exercise #3
+
   Create your object representing your favorite movie, like so
   const shawshank = {
      title: 'Shawshank Redemption',
@@ -90,13 +89,16 @@ const ironman = {
 console.log(`Title: ${ironman.title} \nDirector: ${ironman.director} \nRelease Year: ${ironman.releaseYear} \nDuration: ${ironman.duration} minutes`);
 console.log(`Extended Scenes (+30 min): ${ironman.duration += 30} minutes`);
 
-//Exercise #4 
-//using the array provided below, 
-// How do you check if an object is an array or not? 
-// You are checking if arrayList is an array, assuming it were an object before testing it
-// That it is not an object
-let arrayList = [1, 2, 3];
+/* Exercise #4 
 
+ Using the array provided below, 
+ How do you check if an object is an array or not? 
+ You are checking if arrayList is an array, assuming it were an object before testing it
+ That it is not an object
+*/
+let arrayList = [1, 2, 3];
+console.log(Array.isArray(arrayList));
+console.log(arrayList instanceof Array);
 
 //Exercise #5
 // Write a function countCharacters that, when given a string as an argument,
