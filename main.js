@@ -123,23 +123,29 @@ const countCharacters = (str) => {
 };
 console.log(countCharacters("mississipi"));
 
-//Exercise #6
-// Write a function that accepts two objects
-// as arguments and 
-// *extends* all of the key/value pairs of the second one to the first one
-// function extend(obj1, obj2) {
+/* Exercise #6
 
-// }
-// extend({a: 1, c: 3}, {b: 2, c: 4}) => {a: 1, b:2, c:4}
-
+   Write a function that accepts two objects
+   as arguments and 
+   *extends* all of the key/value pairs of the second one to the first one
+   function extend(obj1, obj2)  
+   }
+   extend({a: 1, c: 3}, {b: 2, c: 4}) => {a: 1, b:2, c:4}
+*/
 object1 = {
   a: 1,
   b: 2,
   c: 3
 };
-
 object2 = {
   c: 4,
   d: 5,
   e: 6
 };
+const extend = (obj1, obj2) => {
+  for (let key in obj2) {
+    obj1[key] = obj2[key];
+  }
+  return obj1;
+}
+console.log(extend(object1, object2));
