@@ -1,18 +1,25 @@
-// Exercise #1
-// Create an object to hold information on your favorite recipe.
-//It should have properties for *title* (a string), *servings*(a number)
-// and *ingredients*(an array of strings)
-// On separate lines (one console.log statement for each), log the 
-//recipe information so it looks like:
-// Mole
-// Serves: 2
-// Ingredients:
-// cinnamon
-// cumin
-// cocoa
+/* Exercise #1 */
 
+/* 
+  Create an object to hold information on your favorite recipe.
+  It should have properties for *title* (a string), *servings*(a number)
+  and *ingredients*(an array of strings)
+  On separate lines (one console.log statement for each), log the 
+  recipe information so it looks like:
+  Mole
+  Serves: 2
+  Ingredients:
+  Cinnamon
+  Cumin
+  Cocoa
+*/
 
-
+let recipe = {
+  title: "Grilled Cheese",
+  servings: 1,
+  ingredients: ["Bread", "Cheese", "Butter"]
+};
+console.log(`${recipe.title} \nServes: ${recipe.servings} \nIngredients:\n${recipe.ingredients[0]}\n${recipe.ingredients[1]}\n${recipe.ingredients[2]}`);
 
 //Exercise #2
 // Create an array of objects, where each object describes
@@ -70,7 +77,7 @@ let arrayList = [1, 2, 3];
 // as arguments and 
 // *extends* all of the key/value pairs of the second one to the first one
 // function extend(obj1, obj2) {
-  
+
 // }
 // extend({a: 1, c: 3}, {b: 2, c: 4}) => {a: 1, b:2, c:4}
 
